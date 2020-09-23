@@ -2,9 +2,10 @@
     <section class="portfolio">
         <div class="container">
             <div class="item-wrapper">
-                <div class="card" v-for="item in portfolios" :key="item.id" :id="item.id">
-                    <nuxt-link :to="'portfolio/' + item.id">
-                        <img :src='item.thumbnail' alt="">
+                <!-- card -->
+                <div class="card" v-for="(item, index) in pData" :key="index">
+                    <nuxt-link :to=item.route>
+                        <img :src='item.thum' alt="">
                         <div class="portfolio-overlay">
                             <div class="overlay-title">
                                 <h3>{{ item.title }}</h3>
@@ -12,37 +13,34 @@
                         </div>
                     </nuxt-link>
                 </div>
+                <!-- end card -->
             </div>
         </div>
     </section>
 </template>
 
 <script>
-import axios from 'axios'
 export default {
-    props: ['id'],
-    data(){
+
+    data() {
         return {
-            portfolios: [],
+            pData: [
+                
+                { route: 'portfolio/item/siteBuild/', title: '포트폴리오 사이트 구축', thum: 'https://i.ibb.co/tJZ3gQh/portfolio-thum.jpg' },
+                { route: 'portfolio/item/nts/', title: '부산지방국세청 리뉴얼', thum: 'https://i.ibb.co/7WV2JNH/item08.jpg' },
+                { route: 'portfolio/item/tong/', title: '동명대학교 리뉴얼', thum: 'https://i.ibb.co/MVFHH4k/item01.jpg' },
+                { route: 'portfolio/item/codinote/', title: '코디노트 퍼블리싱', thum: 'https://i.ibb.co/X5mLhrJ/codinote-thum.jpg' },
+                { route: 'portfolio/item/assm/', title: '국회사이트 리뉴얼', thum: 'https://i.ibb.co/Wvdv3tt/assm-thum.jpg' },
+                { route: 'portfolio/item/museum/', title: '부산 복천박물관 리뉴얼', thum: 'https://i.ibb.co/6XMfcVf/museum-thum.jpg' },
+                { route: 'portfolio/item/yeonje/', title: '연제일신병원 리뉴얼', thum: 'https://i.ibb.co/q0gQyzV/yeonje-thum.jpg' },
+                { route: 'portfolio/item/pale/', title: '팔레드시즈 리뉴얼', thum: 'https://i.ibb.co/41t57ws/pale-thum.jpg' },
+            ]
         }
     },
-  async created () {
-    const config = {
-      headers: {
-        Accept: 'application/json'
-      }
-    }
-    try {
-      const res = await axios.get('https://drf-portfolio-api.herokuapp.com/api/', config)
-      this.portfolios = res.data
-      console.log(this.portfolios)
-    } catch (err) {
-      console.log(err)
-    }
-  },
+
     head() {
         return {
-            title: 'PORTFOLIO',
+            title: '김지훈 포트폴리오',
         }
     }
 }

@@ -3,37 +3,40 @@
         <div class="container">
             <!-- full images -->
             <div class="full-img">
-                <img :src='portfolio.contentImg' alt="">
+                <img src='https://i.ibb.co/HT68Y0v/pale-full.jpg' alt="">
             </div>
             <!-- portfolio details -->
             <div class="project-detail">
                 <!-- 상세내용 -->
                 <div class="contents">
                     <h4>project detail</h4>
-                    <p>{{ portfolio.content | safe }}</p>
+                    <p>부산 해운대구 소재 호텔사이트를 리뉴얼 하였습니다.<br>
+                    예약 및 방을 검색 할 수 있는 폼을 중앙에 배치하였으며 datapicker library 를 이용하여, <br>
+                    체크인 및 체크아웃의 날짜를 선택시 몇박인지 알려주게끔 구현하였습니다.<br>
+                    호텔의 이벤트 및 소개, sns 순서대로 컨텐츠들을 배치하였습니다.</p>
                 </div>
                 <!-- 스킬안내등 -->
                 <div class="infos">
                     <ul>
                         <li>
                             <span>project</span>
-                            <p>{{ portfolio.title }}</p>
+                            <p>팔레드시즈 호텔사이트 리뉴얼</p>
                         </li>
                         <li>
                             <span>position</span>
-                            <p>{{ portfolio.position }}</p>
+                            <p>웹디자인, 퍼블리싱</p>
                         </li>
                         <li>
                             <span>skills</span>
-                            <p>{{ portfolio.skills }}</p>
+                            <p>HTML5, CSS3, jQuery</p>
                         </li>
                         <li>
                             <span>view code</span>
-                            <p><a :href=portfolio.code_view class="github" target="_blank">github</a></p>
+                            <p><a href='https://github.com/kimjihun-dev/pale_de_cz' class="github" target="_blank">github</a></p>
                         </li>
                         <li>
                             <span>view site</span>
-                            <p><a :href=portfolio.site_view class="demo" target="_blank">demo</a></p>
+                            <p><a href='https://kimjihun-dev.github.io/pale_de_cz' class="demo" target="_blank">demo</a></p>
                         </li>
                     </ul>
                 </div>
@@ -46,31 +49,10 @@
 </template>
 
 <script>
-import axios from 'axios'
 export default {
-    data(){
-        return {
-            portfolio: {},
-        }
-    },
-
-    async created () {
-    const config = {
-      headers: {
-        Accept: 'application/json'
-      }
-    }
-    try {
-        const res = await axios.get(`https://drf-portfolio-api.herokuapp.com/api/${this.$route.params.id}`, config)
-        this.portfolio = res.data
-        console.log(this.portfolio)
-        } catch (err) {
-        console.log(err)
-        }
-    },
     head () {
         return {
-            title: this.portfolio.title
+            title: '팔레드시즈 리뉴얼'
         }
     }
 }
