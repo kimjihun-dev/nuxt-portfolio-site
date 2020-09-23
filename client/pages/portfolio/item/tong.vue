@@ -81,10 +81,13 @@ export default {
     .project-detail { display: flex; flex-direction: column; }
     .contents { width: 100%; margin-right: 0%; margin-bottom: 3%; }
     .infos { width: 100%; }
+    .back { margin-block: 55px; }
 }
 
 @media (max-width: 768px) {
-    .back { text-align: right; }
+    .infos { width: 90%; }
+    .infos ul li:nth-child(3), .infos ul li:nth-child(4), .infos ul li:nth-child(5) { height: 0px; }
+    .back { text-align: right; margin: 90px 0 50px; }
 }
 
 </style>
