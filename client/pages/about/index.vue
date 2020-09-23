@@ -1,6 +1,7 @@
 <template>
     <section class="about">
         <div class="container about-inner">
+            <div class="about-bg"></div>
             <div class="about-title">
                 <h4>about</h4>
             </div>
@@ -16,7 +17,7 @@
                 <p>zodlab@kakao.com</p>
             </div>
             <a href="https://github.com/kimjihun-dev" class="github" target="_blank">
-                <img src="~assets/images/github.png" alt="깃허브 아이콘" title="깃허브">
+                <img src="~assets/images/github.png" alt="깃헙아이콘" title="깃헙으로">
             </a>
         </div>
     </section>    
@@ -33,8 +34,8 @@ export default {
 </script>
 
 <style>
-.about { height: 65vh; }
 .about-inner { text-align: center; }
+.about-bg { max-width: 100%; width: 100%; height: 450px; background: url('~assets/images/about-bg.jpg') no-repeat; background-size: cover; }
 .about-title { position: relative; margin-top: 50px; }
 .about-title h4 { font-size: 23px; font-weight: 900; color: #555; text-transform: uppercase; display: block;  }
 .about-title h4::after { position: absolute; left: 50%; bottom: -5%; transform: translateX(-50%); content: ""; display: block; background: #555; width: 80px; height: 1px; }
@@ -45,8 +46,9 @@ export default {
 .github img { width: 30px; }
 
 @media (max-width: 767px) {
-    .about-title { margin-top: 150px; }
+    .about-bg { height: 300px; }
+    .about-title { margin-top: 60px; }
     .about-content { margin-top: 7%; margin-bottom: 20px; }
-    .github { margin-top: 50px; }
+    .github { margin: 50px 0; }
 }
 </style>

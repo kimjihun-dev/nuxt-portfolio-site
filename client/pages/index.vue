@@ -1,7 +1,7 @@
 <template>
     <section class="main">
         <div class="container">
-            <h1>본문</h1>
+            <div class="main-bg"></div>
         </div>
   </section>
 </template>
@@ -16,8 +16,8 @@ export default {
 }
 </script>
 
-}
-</script>
-
 <style>
+.main-bg { max-width: 100%; width: 100%; height: 550px; background: url('~assets/images/main-bg.jpg') no-repeat center/cover; }
+@media (max-width: 767px) {
+}
 </style>
