@@ -39,15 +39,10 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    '@nuxtjs/proxy',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: { proxy: true },
-
-  proxy: {
-    '/api/': { target: 'https://drf-portfolio-api.herokuapp.com/api/', pathRewrite: {'^/api/': ''}, changeOrigin: true }
-  },
+  axios: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {

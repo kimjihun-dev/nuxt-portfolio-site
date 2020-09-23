@@ -61,14 +61,13 @@ export default {
       }
     }
     try {
-        const res = await axios.get(`/api/${this.$route.params.id}`, config)
+        const res = await axios.get(`https://drf-portfolio-api.herokuapp.com/api/${this.$route.params.id}`, config)
         this.portfolio = res.data
         console.log(this.portfolio)
         } catch (err) {
         console.log(err)
         }
     },
-
     head () {
         return {
             title: this.portfolio.title
