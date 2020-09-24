@@ -60,7 +60,8 @@ export default {
     .card { flex: 0 1 49%; }
 }
 @media (max-width: 767px) {
-    .card { flex: 0 1 100%; margin-bottom: 3%; }
+    .card { flex: 0 1 100%; margin-bottom: 5%; }
+    .item-wrapper { padding: 0 3%; }
 }
 
 </style>
