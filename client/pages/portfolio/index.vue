@@ -25,7 +25,7 @@ export default {
     data() {
         return {
             pData: [
-                
+                { route: 'portfolio/item/some/', title: '닭썸 전단지 작업', thum: 'https://i.ibb.co/1GQjXwW/chicken.jpg' },
                 { route: 'portfolio/item/siteBuild/', title: '포트폴리오 사이트 구축', thum: 'https://i.ibb.co/tJZ3gQh/portfolio-thum.jpg' },
                 { route: 'portfolio/item/nts/', title: '부산지방국세청 리뉴얼', thum: 'https://i.ibb.co/7WV2JNH/item08.jpg' },
                 { route: 'portfolio/item/tong/', title: '동명대학교 리뉴얼', thum: 'https://i.ibb.co/MVFHH4k/item01.jpg' },
