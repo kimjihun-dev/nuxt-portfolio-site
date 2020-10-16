@@ -21,7 +21,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ## NUXT.JS 로 구축한 포트폴리오 사이트
 
-demo : https://kimjihun-portfolio.netlify.app/portfolio
+demo : https://kimjihun-portfolio.netlify.app/
 
 <img src="https://i.ibb.co/SQH7TMw/portfolio-full.jpg" width="100%">
 
