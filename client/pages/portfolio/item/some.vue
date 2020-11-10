@@ -36,10 +36,11 @@
                             <span>view code</span>
                             <p><a href='https://github.com/kimjihun-dev/assembly' class="github" target="_blank">github</a></p>
                         </li>
+                        -->
                         <li>
                             <span>view site</span>
-                            <p><a href='https://kimjihun-dev.github.io/assembly' class="demo" target="_blank">demo</a></p>
-                        </li> -->
+                            <p><a href='https://www.instagram.com/p/CFKLxJlsQLb/' class="demo" target="_blank">View</a></p>
+                        </li>
                     </ul>
                 </div>
             </div>

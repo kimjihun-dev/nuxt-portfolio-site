@@ -27,7 +27,7 @@
 export default {
     head() {
         return {
-            title: 'about ',
+            title: 'about: 김지훈',
         }
     }
 }
