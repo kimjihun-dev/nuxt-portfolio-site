@@ -25,6 +25,8 @@ export default {
     data() {
         return {
             pData: [
+                
+                { route: 'portfolio/item/yeonje_ver2', title: '연제일신병원 리뉴얼 VER2', thum: 'https://i.ibb.co/rbDxWg1/yeonje-ver2-thum.jpg' },
                 { route: 'portfolio/item/aoiflower', title: '플로리스트 홍보사이트', thum: 'https://i.ibb.co/TWT12Tk/aoi-thum.jpg' },
                 { route: 'portfolio/item/some/', title: '닭썸 전단지 작업', thum: 'https://i.ibb.co/1GQjXwW/chicken.jpg' },
                 { route: 'portfolio/item/siteBuild/', title: '포트폴리오 사이트 구축', thum: 'https://i.ibb.co/tJZ3gQh/portfolio-thum.jpg' },

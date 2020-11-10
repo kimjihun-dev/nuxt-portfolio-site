@@ -1,7 +1,8 @@
 <template>
     <section class="main">
         <div class="container">
-            <div class="main-bg"></div>
+            <div class="main-bg">
+            </div>
         </div>
   </section>
 </template>

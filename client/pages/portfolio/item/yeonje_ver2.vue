@@ -3,7 +3,7 @@
         <div class="container">
             <!-- full images -->
             <div class="full-img">
-                <img src='https://i.ibb.co/SQH7TMw/portfolio-full.jpg' alt="포트폴리오 사이트">
+                <img src='https://i.ibb.co/rpy9rXR/yeonje-ver2.jpg' alt="연제일신병원 리뉴얼 버전2">
             </div>
             <!-- portfolio details -->
             <div class="project-detail">
@@ -11,13 +11,9 @@
                 <div class="contents">
                     <h4>project detail</h4>
                     <p>
-                        포트폴리오 사이트를 구축하였습니다.<br>
-                        VUE 기반 NUXT.JS 프레임워크로 제작을 하였으며 정적 웹사이트 호스팅 서비스인 <br>
-                        netlify 에 배포를 하였습니다. 단순 html 페이지들로만 구성된 기존의 사이트들 보며 <br>
-                        포트폴리오들을 관리,배포하기 편한 방법을 찾다가 개인프로젝트 겸 제작 하였으며, <br>
-                        Header, Footer 등의 반복적으로 사용 되는 부분은 컴포넌트로 제작, 프레임워크에서 제공되는 <br>
-                        파일만 만들어도 자동으로 만들어주는 라우팅 기능으로 포트폴리오 페이지들을 구축하였습니다. <br>
-                        기능들이나 디자인들을 지속적으로 수정해나갈 계획입니다.
+                        개인 프로젝트로 진행했던 병원 사이트 리뉴얼을, 다시 디자인하였습니다.<br>
+                        전체적으로 컨텐츠들을 재배치하고 폰트크기라던가 반응형에서의 가독성 부분을 고려하여, <br>
+                        디자인하였습니다. (2020-11-11 퍼블리싱 중입니다.)
                     </p>
                 </div>
                 <!-- 스킬안내등 -->
@@ -25,23 +21,23 @@
                     <ul>
                         <li>
                             <span>project</span>
-                            <p>포트폴리오 사이트 구축</p>
+                            <p>병원사이트 리뉴얼 Ver2</p>
                         </li>
                         <li>
                             <span>position</span>
-                            <p>웹디자인, 퍼블리싱, 프로그래밍</p>
+                            <p>웹디자인, 퍼블리싱</p>
                         </li>
                         <li>
                             <span>skills</span>
-                            <p>HTML5, CSS3, NUXT.JS</p>
+                            <p>html5, css3, javascript</p>
                         </li>
                         <li>
                             <span>view code</span>
-                            <p><a href='https://github.com/kimjihun-dev/nuxt-portfolio-site' class="github" target="_blank">github</a></p>
+                            <p><a href='javascript:;' class="github" target="_blank">github</a></p>
                         </li>
                         <li>
                             <span>view site</span>
-                            <p><a href='https://kimjihun-portfolio.netlify.app/portfolio' class="demo" target="_blank">demo</a></p>
+                            <p><a href='javascript:;' class="demo" target="_blank">demo</a></p>
                         </li>
                     </ul>
                 </div>
@@ -57,7 +53,7 @@
 export default {
     head () {
         return {
-            title: '포트폴리오 사이트 구축'
+            title: '연제일신병원 리뉴얼 ver2'
         }
     }
 }
