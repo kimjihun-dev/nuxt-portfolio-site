@@ -23,8 +23,8 @@ export default {
     data() {
         return {
             navLinks: [
-                { route: '/portfolio', text: 'Portfolio' },
-                { route: '/about', text: 'About', },
+                { route: 'portfolio', text: 'Portfolio' },
+                { route: 'about', text: 'About', },
             ]
         }
     },
