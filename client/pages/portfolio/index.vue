@@ -4,7 +4,7 @@
             <div class="item-wrapper">
                 <!-- card -->
                 <div class="card" v-for="(item, index) in pData" :key="index">
-                    <nuxt-link :to="'portfolio/' + item.route">
+                    <nuxt-link :to="'portfolio/item/' + item.route">
                         <img :src='item.thum' alt="">
                         <div class="portfolio-overlay">
                             <div class="overlay-title">
@@ -26,17 +26,17 @@ export default {
         return {
             pData: [
                 
-                { route: 'item/yeonje_ver2', title: '연제일신병원 리뉴얼 VER2', thum: 'https://i.ibb.co/rbDxWg1/yeonje-ver2-thum.jpg' },
-                { route: 'item/aoiflower', title: '플로리스트 홍보사이트', thum: 'https://i.ibb.co/TWT12Tk/aoi-thum.jpg' },
-                { route: 'item/some/', title: '닭썸 전단지 작업', thum: 'https://i.ibb.co/1GQjXwW/chicken.jpg' },
-                { route: 'item/siteBuild/', title: '포트폴리오 사이트 구축', thum: 'https://i.ibb.co/tJZ3gQh/portfolio-thum.jpg' },
-                { route: 'item/nts/', title: '부산지방국세청 리뉴얼', thum: 'https://i.ibb.co/7WV2JNH/item08.jpg' },
-                { route: 'item/tong/', title: '동명대학교 리뉴얼', thum: 'https://i.ibb.co/MVFHH4k/item01.jpg' },
-                { route: 'item/codinote/', title: '코디노트 퍼블리싱', thum: 'https://i.ibb.co/X5mLhrJ/codinote-thum.jpg' },
-                { route: 'item/assm/', title: '국회사이트 리뉴얼', thum: 'https://i.ibb.co/Wvdv3tt/assm-thum.jpg' },
-                { route: 'item/museum/', title: '부산 복천박물관 리뉴얼', thum: 'https://i.ibb.co/6XMfcVf/museum-thum.jpg' },
-                { route: 'item/yeonje/', title: '연제일신병원 리뉴얼', thum: 'https://i.ibb.co/q0gQyzV/yeonje-thum.jpg' },
-                { route: 'item/pale/', title: '팔레드시즈 리뉴얼', thum: 'https://i.ibb.co/41t57ws/pale-thum.jpg' },
+                { route: 'yeonje_ver2', title: '연제일신병원 리뉴얼 VER2', thum: 'https://i.ibb.co/rbDxWg1/yeonje-ver2-thum.jpg' },
+                { route: 'aoiflower', title: '플로리스트 홍보사이트', thum: 'https://i.ibb.co/TWT12Tk/aoi-thum.jpg' },
+                { route: 'some/', title: '닭썸 전단지 작업', thum: 'https://i.ibb.co/1GQjXwW/chicken.jpg' },
+                { route: 'siteBuild/', title: '포트폴리오 사이트 구축', thum: 'https://i.ibb.co/tJZ3gQh/portfolio-thum.jpg' },
+                { route: 'nts/', title: '부산지방국세청 리뉴얼', thum: 'https://i.ibb.co/7WV2JNH/item08.jpg' },
+                { route: 'tong/', title: '동명대학교 리뉴얼', thum: 'https://i.ibb.co/MVFHH4k/item01.jpg' },
+                { route: 'codinote/', title: '코디노트 퍼블리싱', thum: 'https://i.ibb.co/X5mLhrJ/codinote-thum.jpg' },
+                { route: 'assm/', title: '국회사이트 리뉴얼', thum: 'https://i.ibb.co/Wvdv3tt/assm-thum.jpg' },
+                { route: 'museum/', title: '부산 복천박물관 리뉴얼', thum: 'https://i.ibb.co/6XMfcVf/museum-thum.jpg' },
+                { route: 'yeonje/', title: '연제일신병원 리뉴얼', thum: 'https://i.ibb.co/q0gQyzV/yeonje-thum.jpg' },
+                { route: 'pale/', title: '팔레드시즈 리뉴얼', thum: 'https://i.ibb.co/41t57ws/pale-thum.jpg' },
             ]
         }
     },
