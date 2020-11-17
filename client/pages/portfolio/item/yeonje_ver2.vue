@@ -11,9 +11,9 @@
                 <div class="contents">
                     <h4>project detail</h4>
                     <p>
-                        개인 프로젝트로 진행했던 병원 사이트 리뉴얼을, 다시 디자인하였습니다.<br>
+                        개인 프로젝트로 진행했던 병원 사이트 리뉴얼을, 개선 작업을 하였습니다.<br>
                         전체적으로 컨텐츠들을 재배치하고 폰트크기라던가 반응형에서의 가독성 부분을 고려하여, <br>
-                        디자인하였습니다. (2020-11-11 퍼블리싱 중입니다.)
+                        디자인하였습니다. 피그마를 이용하여 디자인 작업 후 제플린을 이용하여, 퍼블리싱을 하였습니다.
                     </p>
                 </div>
                 <!-- 스킬안내등 -->
@@ -33,11 +33,11 @@
                         </li>
                         <li>
                             <span>view code</span>
-                            <p><a href='javascript:;' class="github" target="_blank">github</a></p>
+                            <p><a href='https://github.com/kimjihun-dev/yeonje_re' class="github" target="_blank">github</a></p>
                         </li>
                         <li>
                             <span>view site</span>
-                            <p><a href='javascript:;' class="demo" target="_blank">demo</a></p>
+                            <p><a href='https://kimjihun-dev.github.io/yeonje_re/' class="demo" target="_blank">demo</a></p>
                         </li>
                     </ul>
                 </div>
